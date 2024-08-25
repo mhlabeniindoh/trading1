@@ -1,0 +1,64 @@
+﻿body {
+    background-color: white;
+}
+body {font-size: 20px;}
+body {
+    background-image: url('forex.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    background-color: Lavender; /* Sets the background color of the h1 element */
+    border: 3px solid transparent; /* Makes the initial border transparent */
+    border-radius: 15px; /* Rounds the corners of the border */
+    width: 50%; /* Sets the width of the h1 to 50% of its parent container */
+    margin: 0 auto; /* Centers the h1 element horizontally */
+    padding: 20px; /* Adds padding inside the border to center the text */
+    text-align: center; /* Centers the text inside the h1 */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    position: relative; /* Positions the element relative to its normal position */
+    /* Adds a pseudo-element for a gradient border */
+}
+
+    h1::before {
+        content: ""; /* Creates an empty pseudo-element */
+        position: absolute; /* Positions the pseudo-element relative to the h1 */
+        top: -3px; /* Positions the top of the pseudo-element */
+        left: -3px; /* Positions the left of the pseudo-element */
+        right: -3px; /* Positions the right of the pseudo-element */
+        bottom: -3px; /* Positions the bottom of the pseudo-element */
+        background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff); /* Creates a gradient from red to violet */
+        border-radius: 15px; /* Matches the border-radius of the h1 */
+        z-index: -1; /* Places the pseudo-element behind the h1 */
+    }
+
+/* Reset margins and padding for the entire page */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100vw; /* Full viewport width */
+    height: 100%; /* Full viewport height */
+    background-image: url('fff.webp'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the full element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    overflow: hidden; /* Prevents overflow beyond the curved corners */
+}
+
+
+    .profile-pic-figure img{
+    min-width:30px;
+    border:5px double gray;
+    border-radius:50%;
+}
+.example{
+    margin-top: 1rem;
+    padding-left:15px;
+    border:1px solid black;
+    
+}
+
